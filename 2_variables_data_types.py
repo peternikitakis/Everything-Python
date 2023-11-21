@@ -60,5 +60,23 @@ print(f"\t{temp_name}")
 filename = "python_notes.txt"
 print(filename.removesuffix(".txt"))
     
+#numbers, integers, floats, underscores
+world_age = 12_000_000_000
+print(world_age)\
+
+#multiple assignment
+x, y, z = 0, 0, 0
+
+#constants
+MAX_CONNECTIONS = 5000
+print(MAX_CONNECTIONS)
+
+#2-9
+print(4+4)
+print(12-4)
+print(4*2)
+print(16/2)
+master_number = 22
+print(f"My master number {master_number}")
 
 
