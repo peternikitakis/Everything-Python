@@ -81,7 +81,6 @@ message_four = (f"Dear {guest_list[0]} would you like to attend the show?")
 message_five = (f"Dear {guest_list[2]} would you like to attend the show?")
 message_six = (f"Dear {guest_list[5]} would you like to attend the show?")
 
-
 print(message_one)
 print(message_two)
 print(message_three)
