@@ -58,4 +58,63 @@ print(popped_manufacturer)
 exotic_manufacturer = (f"The {car_manufacturers.pop(0).title()}")
 print(exotic_manufacturer)
 
+#3-4 create guest list and an invitation for each
+guest_list = ['John', 'Alex', 'Joseph']
+message_one = (f"Dear {guest_list[0]}, would you like to attend the show?")
+message_two = (f"Dear {guest_list[1]}, would you like to attend the show?")
+message_three = (f"Dear {guest_list[2]}, would you like to attend the show?")
 
+print(f"Unfortunately, it appears that {guest_list[1]} can't make the show, but we may have someone else. ")
+
+#3-5 changing guest list - removed alex and added greg in index spot 1 + resent out invitations
+guest_list[1] = ("Greg")
+message_two = (f"Dear {guest_list[1]}, would you like to attend the show?")
+
+print("Oh look guys! I found three more tickets.")
+
+#3-6 invite more people to the show
+guest_list.insert(0, "Tom")
+guest_list.insert(2, "Ben")
+guest_list.append("Patrick")
+
+message_four = (f"Dear {guest_list[0]} would you like to attend the show?")
+message_five = (f"Dear {guest_list[2]} would you like to attend the show?")
+message_six = (f"Dear {guest_list[5]} would you like to attend the show?")
+
+
+print(message_one)
+print(message_two)
+print(message_three)
+print(message_four)
+print(message_five)
+print(message_six)
+
+print("Oh no, it says the max number of participants I can bring are two")
+
+# popping out each person I am rescinding the invite to and sending them a message apologizing 
+pop_invite = guest_list.pop(0)
+invite_withdraw_01 = (f"Dear {pop_invite}, I am sorry you can no longer attend. I can only bring two people.")
+
+pop_invite_02 = guest_list.pop(1)
+invite_withdraw_02 = (f"Dear, {pop_invite_02}, I am sorry you can no longer attend. I can only bring two people.")
+
+pop_invite_03 = guest_list.pop(3)
+invite_withdraw_03 = (f"Dear, {pop_invite_03}, I am sorry you can no longer attend. I can only bring two people.")
+
+pop_invite_04 = guest_list.pop(0)
+invite_withdraw_03 = (f"Dear, {pop_invite_04}, I am sorry you can no longer attend. I can only bring two people.")
+
+'''pop_invite_04 = guest_list.pop(4)
+invite_withdraw_03 = (f"Dear, {pop_invite_04}, I am sorry you can no longer attend. I can only bring two people.")'''
+
+print(invite_withdraw_01)
+print(invite_withdraw_02)
+print(invite_withdraw_03)
+
+print(f"Dear {guest_list[0]}, while I had to rescind my invite to others, please do still accept my invitation.")
+print(f"Dear {guest_list[1]}, while I had to rescind my invite to others, please do still accept my invitation.")
+
+#remove everyone off list and show list is empty 
+del guest_list[0]
+del guest_list[0]
+print(guest_list)
