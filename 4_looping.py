@@ -2,7 +2,7 @@
 # for loop
 #indentation - the only lines 
 #range() - makes it easy to generate a series of numbers 
-'''
+
 #defining a for loop
 magicians = ['alice', 'david', 'carolina']
 for magician in magicians:
@@ -13,7 +13,7 @@ for magician in magicians:
     print(f"{magician.title()}, that was a great trick")
 
 #adding indenentation
-    print(f"I'm looking forward to your next trick, {magician.title()}\n")'''
+    print(f"I'm looking forward to your next trick, {magician.title()}\n")
 
 #4-1 
 pizzas = ['pepperoni', 'pinapple & ham', 'sausage']
