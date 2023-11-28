@@ -44,7 +44,7 @@ print(numbers)
 even_numbers = list(range(2, 11, 2))
 print(even_numbers)
 
-#a list of the first 10 square numbers
+#here is an empty list called squares. we then tell python to loop through each value from 1 to 10 using the range() function. Inside the loop, the current value is raised to the second power and assigned to the variable square. For each new value its then appended to the list squares
 squares = []
 for value in range(1, 11):
     square = value ** 2
@@ -52,3 +52,50 @@ for value in range(1, 11):
 
 print(squares)
 
+#now to write this code more concisely.. 
+squares = []
+for value in range(1, 11):
+    squares.append(value ** 2)
+    print(squares)
+
+#list comprehensions 
+squares = [value**2 for value in range (1, 11)]
+print(squares)
+
+#4-3 counting to twenty
+for value in range(1, 21):
+    print(value)
+
+
+#4-4 one million 
+for value in range(1, 101):
+    print(value) 
+
+#4-5 making a list from one to one million, and then use min() max() and sum() function 
+my_list = list(range(1, 101))
+print(min(my_list))
+print(max(my_list))
+print(sum(my_list))
+
+#4-6 odd numbers
+my_odd_list = list(range(1, 21, 2))
+for i in my_odd_list:
+    print(i)
+
+#4-7 threes
+multiple_list = list(range(3, 30, 3))
+for i in multiple_list:
+    print(i)
+
+#4-8 
+cube_list = list(range(1, 11))
+for i in cube_list:
+    print(i**3)
+
+#4-8 same result but writing code more concisely. Also included a string 
+for i in range(1, 11):
+    print("{} cubed is {}".format(i,i**3))
+
+#4-9 use a list comprehension to generate a list of the first 10 cubes
+cubed_list = [i **3 for i in range(1, 11)]
+print(cubed_list)
