@@ -72,3 +72,17 @@ for i in dimensions:
     print(i)
 
 #here we simply reassigned the variable 
+
+#4-13 
+buffet_style = ('salad', 'bread', 'steak', 'potatoes', 'dessert')
+for i in buffet_style:
+    print(i)
+
+#make error on purpose
+'''buffet_style[4] = 'coffee'
+print(buffet_style)'''
+
+print("\n")
+buffet_style = ('salad', 'bread', 'chicken', 'potatoes', 'coffee')
+for i in buffet_style:
+    print(i)
