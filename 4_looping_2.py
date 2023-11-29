@@ -64,3 +64,11 @@ for i in dimensions:
     print(i)
 
 
+#tuples are technically defined by the presence of a comma example: my_t = (3,)
+#while you can't modify a tuple, you can assign a new value to a variable. for example, if we wanted to change the dimensions of the rectangle 
+
+dimensions = (400, 100)
+for i in dimensions:
+    print(i)
+
+#here we simply reassigned the variable 
