@@ -161,3 +161,43 @@ elif 'pineapple' == favorite_fruit:
 else:
     print("Please try again")
     favorite_fruit = input("Enter Favorite Fruit:    ")
+    '''
+'''
+#using if statements with lists
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese'] 
+
+for i in requested_toppings:
+    print(f"Adding {i}.")
+
+print("\nFinished Making Your Pizza")
+
+#now what if the pizzeria runs out of green peppers? An if statement inside the foor loop can handle this situation appropriately 
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese'] 
+
+for i in requested_toppings:
+    if i == 'green peppers':
+        print("Sorry, we are out of green peppers right now")
+    else: 
+        print(f"Adding {i}.")
+
+print("\nFinished Making Your Pizza") 
+
+#checking that a list is not empty (before running a loop, a user may leave a field empty)
+requested_currencies = []
+
+if requested_currencies: 
+    for i in requested_currencies:
+            print(f"Initiating your exchange of {i}")
+    print("Finished your exchange")
+else: 
+     print("Are you sure there isn't anything you want exhchanged today?")
+
+#using multiple lists. we can utilize lists and if statements to make sure our input makes sense before executing on it 
+available_currencies = ['USD', 'EUR', 'BP']
+requested_currencies = ['USD', 'EUR', 'BP', 'YEN']
+
+for i in requested_currencies:
+      if i in available_currencies:
+            print("Yes, we intialize your currency exchange")
+else:
+    print("Sorry, we do not exchange all of the currencies requested. Please try again")
