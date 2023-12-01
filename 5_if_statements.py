@@ -81,7 +81,7 @@ else:
         result = "Legendary"
     print(f"You are at a {result} level. Congrats. Continue onwards!")
 
-#omitting the else block
+#omitting the else block, if we used an if-else-block the code would stop running after one passes
 requested_toppings = ['mushrooms', 'extra_cheese']
 if 'mushrooms' in requested_toppings:
     print("adding mushrooms")
@@ -91,3 +91,73 @@ if 'extra_cheese' in requested_toppings:
     print("adding extra cheese.") 
 
 print("\nFinished making your pizza!")
+
+#5-3 
+try:
+    alien_color_input = input("Alien Color: ")
+    if alien_color_input == 'green':
+        print("You have just earned 5 points")
+
+except ValueError:
+    print("Please enter a valid color:  ")
+
+#5-4 use 
+alien_color = "green"
+
+if alien_color == 'yellow':
+    print("You have just earned 5 points")
+else: 
+    print("You have just earned 10 points")
+
+#now use else
+alien_color = "blue"
+
+if alien_color == 'yellow':
+    print("You have just earned 5 points")
+else: 
+    print("You have just earned 10 points")
+
+#5-5 
+alien_color_input = input("Enter Color: ")
+if alien_color_input == "green":
+    print("You have earned 5 points")
+elif alien_color_input == "yellow":
+    print("You have earned 10 points")
+elif alien_color_input == "red": 
+    print("You have earned 15 points")
+else: 
+    print("Please enter a valid color") 
+
+
+#5-6 #int converts any input into an integer. If it can't be processed into an integer it goes straight to ValueError
+try:
+    person_age = int(input("Enter Your Age: "))
+    if person_age <= 2:
+        print("You are a baby")
+    elif 2<= person_age <4:
+        print("This person is a Toddler")
+    elif 4<= person_age <13:
+        print("This person is a Kid")
+    elif 13<= person_age <20:
+        print("This person is a Teenager")
+    elif 20<= person_age <65:
+        print("This person is an Adult") 
+    elif person_age >= 65:
+        print('You are an Elder')
+    else: 
+        print("Please enter a valid number")  
+
+except ValueError:
+    print("Please enter a valid number") 
+
+#5-7 
+favorite_fruit = input("Enter Favorite Fruit:    ")
+if 'peaches' == favorite_fruit:
+    print(f"You really like {favorite_fruit}")
+elif 'mangos' == favorite_fruit:
+    print(f"You really like {favorite_fruit}")
+elif 'pineapple' == favorite_fruit:
+    print(f"You really like {favorite_fruit}")
+else:
+    print("Please try again")
+    favorite_fruit = input("Enter Favorite Fruit:    ")
