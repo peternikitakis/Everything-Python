@@ -81,3 +81,13 @@ else:
         result = "Legendary"
     print(f"You are at a {result} level. Congrats. Continue onwards!")
 
+#omitting the else block
+requested_toppings = ['mushrooms', 'extra_cheese']
+if 'mushrooms' in requested_toppings:
+    print("adding mushrooms")
+if 'pepperoni' in requested_toppings:
+    print("adding pepperoni")
+if 'extra_cheese' in requested_toppings:
+    print("adding extra cheese.") 
+
+print("\nFinished making your pizza!")
