@@ -40,16 +40,19 @@ while True:
     username_taken = False #resets to false after loop
 
     for i in current_users:
-                if i == user_login:
-                    print(f"You will need to enter a new username as this had already been taken. Please try again.")
-                    username_taken = True
-                if not username_taken:
-                    claim_username = input(f"Great. {user_login} is available. Would you like to claim the username? (yes/no):  ")
-                    if claim_username.lower() == 'yes':
-                        print(f"Great the {user_login} has been successfully added")
-                        current_users.append(user_login)
-                    else:
-                        print("Thank you for your answer. This program will now shutdown.")
-                        break
+        if i == user_login:
+            print(f"You will need to enter a new username as this had already been taken. Please try again.")
+            username_taken = True
+    if not username_taken:
+        claim_username = input(f"Great. {user_login} is available. Would you like to claim the username? (yes/no):  ")
+        if claim_username.lower() == 'yes':
+            print(f"{user_login} has been successfully added!")
+            current_users.append(user_login)
+            break
+        else:
+            print("Thank you for your answer. This program will now shutdown.")
+            break
+
+
 
         
