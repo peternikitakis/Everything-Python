@@ -1,11 +1,18 @@
-# says hello and asks for name
-print('Hello, frined')
-print('What is your name?') #ask for their name
-myName = input()
-print('It is good to meet you,' + myName)
-print(len(myName))
-print('What is your age?') #ask for their age
-myAge = input()
-print('You will be ' + str(int(myAge) + 'in a year'))
+print("Hello, what is your name?")
+myName =  input()
+
+
+if myName == "Peter":
+    print("Hello Peter, you will be placed in A Department.")
+elif myName == "Alex":
+    print("Hello Alex, you will be placed in B Department.")
+elif myName == "Curtis":
+    print("Hello Curtis, you will be placed in C Department.")
+elif myName == "Joe":
+    print("Hello Joe, you will be placed in D Department.")
+elif myName != "Peter" "Alex" "Curtis" "Joe":
+    print("Oh no! Your name was not found in our database. Please try again.")
+
+
 
 
