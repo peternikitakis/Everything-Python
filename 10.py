@@ -2,7 +2,7 @@ import random
 secretNumber = random.randint(1,20)
 print("I am thinking  of a number between 1 and 20")
 
-# Ask the players to guess 6 times
+# Ask the players to guess 6 times , this loop iterates 6 times and each time it loops its stored in guessesTaken
 for guessesTaken in range(1,7):
     print("Take a guess")
     guess = int(input())
