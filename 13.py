@@ -62,5 +62,4 @@ while True: # the main game loop
         losses = losses + 1
 
 
-
     
