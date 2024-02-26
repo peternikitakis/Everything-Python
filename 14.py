@@ -5,16 +5,16 @@ losses = 0
 ties = 0
 
 while True: 
-    print('%s Wins, % Losses, % Ties ' %(wins, losses, ties))
+    print('%s Wins, %s Losses, %s Ties' % (wins, losses, ties))
     print("Hello Player, above this message you shall see your current leaderboard standing.")
-    print("Would you like to continue? (Y / N)")
-    playerDecision = input()
-    if playerDecision == 'Y':
-        break 
-    if playerDecision == 'N':
-        sys.exit()
-    
-    while True: 
+    while True:
+        print("Would you like to continue? (Y / N)")
+        playerDecision = input()
+        if playerDecision == 'Y':
+            continue
+        if playerDecision == 'N':
+            sys.exit()
+            
         print("Please enter one of the following below - r(ock), p(aper), s(cissors), q(uit)")
         playerMove = input()
         if playerMove == 'r':
@@ -56,7 +56,6 @@ while True:
         elif playerMove == 's' and computerMove == 'r':
             print("You lost!")
             losses = losses + 1
-
 
         
         
